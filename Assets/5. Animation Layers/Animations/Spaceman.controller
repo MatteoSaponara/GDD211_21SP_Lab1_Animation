@@ -71,7 +71,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Body
     m_StateMachine: {fileID: 6584650803783464317}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: 2ddaac57814e7bd459f967919eec511f, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -103,7 +103,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 4299145845935444569}
-    m_Position: {x: 510, y: 110, z: 0}
+    m_Position: {x: 530, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1518401525655511044}
     m_Position: {x: 280, y: 110, z: 0}

@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class SpacemanController3D : MonoBehaviour
 {
-    [SerializeField] private Animator animator;
+	[SerializeField] private Animator ani;
 
 	private void Update()
 	{
-		if ( Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0)
+		//Get input
+		float walk = Input.GetAxis("Horizontal");
+
+		//Animate
+		if (walk != 0)
 		{
-			animator.SetFloat("MoveSpeed", 1);
+			ani.SetFloat("WalkSpeed", 1);
+			transform.position += new Vector3(walk * Time.deltaTime, 0, 0);
 		}
 		else
 		{
-			animator.SetFloat("MoveSpeed", 0);
+			ani.SetFloat("WalkSpeed", 0);
 		}
 	}
 }

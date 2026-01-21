@@ -37,7 +37,7 @@ public class SpacemanControllerBlend : MonoBehaviour
 		// Animation
 		aniSpeed = Mathf.Lerp(0, aniSpeedMax, Mathf.Abs(walkSpeed) / walkSpeedMax); // Remap walkSpeed onto aniSpeed.
 
-		animator.SetFloat("MoveSpeed", aniSpeed);
+		animator.SetFloat("speed", aniSpeed);
 
 		// Rotate
 		if (facing < 0)
@@ -48,5 +48,6 @@ public class SpacemanControllerBlend : MonoBehaviour
 		{
 			transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, new Vector3(0f, 90f, 0f), Time.deltaTime * 4f);
 		}
+
 	}
 }

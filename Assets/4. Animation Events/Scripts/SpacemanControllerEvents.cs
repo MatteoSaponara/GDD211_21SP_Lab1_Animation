@@ -82,4 +82,5 @@ public class SpacemanControllerEvents : MonoBehaviour
 		pointLight.intensity = pointlightStart;
 		spotLight.intensity = spotlightStart;
 	}
+
 }
